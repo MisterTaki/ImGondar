@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>赏金IT部落</title>
+  <link rel="stylesheet" href="lib/reset.css">
+  <link rel="stylesheet" href="style/style.min.css">
+  <script src="lib/jquery-1.12.4.min.js" charset="utf-8"></script>
+  <script src="scripts/main.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <!--[if lt IE 9]>
+    <style>
+      #top-tip {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        text-align: center;
+        color: #404040;
+        background-color: #F6F1ED;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+      }
+
+      #top-tip .tip-close {
+        position: absolute;
+        display: block;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        margin: 9px;
+        background: url(images/ie-close.png) no-repeat;
+        cursor: pointer;
+      }
+
+      #top-tip a {
+        color: #ee7700;
+      }
+      #top-tip a:hover {
+        color: #BE5F00;
+        text-decoration: underline;
+      }
+    </style>
+
+    <script type="text/javascript">
+      $(function() {
+        (function() {
+          $('#top-tip .tip-close').click(function() {
+            $('#top-tip').hide();
+          })
+        })();
+      });
+    </script>
+
+    <div id="top-tip">
+      <span class="tip-close" title="关闭"></span>
+      <p>已经有超过90%的用户使用更高版本 <a target="_blank" title="下载Chrome" href="http://www.google.cn/intl/zh-CN/chrome/">Google Chrome</a> 或 <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="下载最新版IE浏览器">Internet Explorer</a> 获得了更精彩的体验，您还不试试？</p>
+    </div>
+  <![endif]-->
+  <!-- 顶部固定 -->
+  <!-- 头部 -->
+  <div id="header">
+    <div class="header-container">
+      <div class="container clearfloat">
+        <h1 class="logo">
+          <a href="#" title="赏金IT部落">
+            <img src="images/black-logo_202x59.png" alt="赏金IT部落">
+          </a>
+        </h1>
+        <ul class="nav clearfloat">
+          <li class="active">
+            <a class="link" href="#header">首页</a>
+          </li>
+          <li>
+            <a class="link" href="#service">服务</a>
+          </li>
+          <li>
+            <a class="link" href="#case">案例</a>
+          </li>
+          <li>
+            <a class="link" href="#team">团队</a>
+          </li>
+          <li>
+            <a class="link" href="#">联系我们</a>
+          </li>
+          <i id="cur-bar"></i>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Banner轮播 -->
+  <div id="banner">
+
+  </div>
+  <!-- 服务 -->
+  <div id="service">
+    <div class="container">
+      <h2>WHAT CANWE DO</h2>
+      <i class="hr"></i>
+      <h3>产品中心</h3>
+      <ul class="cards clearfloat">
+        <li class="card card-1">
+          <div class="card-icon"></div>
+          <h4>UI/UE设计</h4>
+          <p>UI即User Interface(用户界面)的简称。UI设计是指对软件的人机交互、操作逻辑、界面美观的整体设计。</p>
+        </li>
+        <li class="card card-2">
+          <div class="card-icon"></div>
+          <h4>WEB开发</h4>
+          <p>Web前端开发是从网页制作演变而来的，名称上有很明显的时代特征。</p>
+        </li>
+        <li class="card card-3">
+          <div class="card-icon"></div>
+          <h4>APP开发</h4>
+          <p>App开发，是指专注于手机应用软件开发与服务。通常专指手机上的应用软件，或称手机客户端。</p>
+        </li>
+        <li class="card card-4">
+          <div class="card-icon"></div>
+          <h4>微信开发</h4>
+          <p>微信开发即微信公众平台开发，通过微信网页的方式进行表现，形成主流的线上线下微信互动营销方式。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 案例 -->
+  <div id="case">
+    <div class="container">
+      <h2>SUCCESSFUL CASE</h2>
+      <i class="hr"></i>
+      <h3>成功案例</h3>
+      <ul class="cases clearfloat">
+        <li class="case case-1">
+          <h4>赏金猎人 App</h4>
+        </li>
+        <li class="case case-2">
+          <h4>中央美术学院设计展</h4>
+        </li>
+        <li class="case case-3">
+          <h4>星空云网站</h4>
+        </li>
+        <li class="case case-4">
+          <h4>爱动到家</h4>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 团队 -->
+  <div id="team">
+    <div class="container">
+      <h2>LEADERS</h2>
+      <i class="hr"></i>
+      <h3>团队代表</h3>
+      <div class="members">
+
+      </div>
+    </div>
+  </div>
+  <!-- 底部 -->
+  <div id="footer">
+    <div class="container">
+      <ul class="clearfloat lists">
+        <li class="list list-logo">
+          <img src="images/white-logo_200x35.png" alt="white-logo" />
+        </li>
+        <li class="list">
+          <h5>业务</h5>
+          <ul class="items">
+            <li class="item">
+              <a href="#">UI/UE设计</a>
+            </li>
+            <li class="item">
+              <a href="#">WEB开发</a>
+            </li>
+            <li class="item">
+              <a href="#">APP开发</a>
+            </li>
+            <li class="item">
+              <a href="#">微信开发</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list">
+          <h5>关于我们</h5>
+          <ul class="items">
+            <li class="item">
+              <a href="#">关于赏金IT部落</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list">
+          <h5>联系我们</h5>
+          <ul class="items">
+            <li class="item">
+              <p class="email-tt">邮箱：</p>
+              <a href="#">littlebearwmx@qq.com</a>
+            </li>
+            <li class="item">
+              <a href="#">新浪微博</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list">
+          <h5>官方微信</h5>
+          <img src="images/qrcode-130x128.jpg" alt="qrcode" />
+        </li>
+      </ul>
+      <p class="address">公司地址：北京市海淀区北四环科群大厦</p>
+      <div class="copyright">
+        <p>服务与帮助 | 京ICP备14026395号-1</p>
+        <p>Copyright2016 All Rights Reserved | 北京赏金猎人网络科技有限公司</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

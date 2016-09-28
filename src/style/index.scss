@@ -1,0 +1,199 @@
+@import "mixin";
+@import "variables";
+@import "common";
+@import "header";
+@import "footer";
+#banner {
+  height: 650px;
+  background-color: #f8f8f8;
+}
+#service {
+  .container {
+    width: 1280px;
+    padding: 98px 0 50px;
+    @include center;
+  }
+  h2 {
+    font-size: 40px;
+    color: $blue;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .cards {
+    .card {
+      float: left;
+      width: 320px;
+      box-sizing: border-box;
+      padding: 0 15px;
+    }
+    .card-icon {
+      width: 270px;
+      height: 270px;
+      transition: all .5s ease;
+    }
+    .card-1 .card-icon {
+      background: url(../images/card-1_222x221.png) no-repeat center;
+    }
+    .card-2 .card-icon {
+      background: url(../images/card-2_222x221.png) no-repeat center;
+    }
+    .card-3 .card-icon {
+      background: url(../images/card-3_222x222.png) no-repeat center;
+    }
+    .card-4 .card-icon {
+      background: url(../images/card-4_222x222.png) no-repeat center;
+    }
+    .card-1:hover .card-icon {
+      background: url(../images/card-1-hover_269x269.png) no-repeat center;
+    }
+    .card-2:hover .card-icon {
+      background: url(../images/card-2-hover_269x269.png) no-repeat center;
+    }
+    .card-3:hover .card-icon {
+      background: url(../images/card-3-hover_269x269.png) no-repeat center;
+    }
+    .card-4:hover .card-icon {
+      background: url(../images/card-4-hover_269x269.png) no-repeat center;
+    }
+    h4 {
+      font-size: 22px;
+      color: $black;
+      text-align: center;
+      line-height: 76px;
+    }
+    p {
+      font-size: 14px;
+      color: #666666;
+      text-align: justify;
+      line-height: 22px;
+      padding: 0 10px;
+    }
+  }
+}
+#case {
+  background: #333333 url(../images/case-bg_2000x460.jpg) no-repeat bottom center;
+  .container {
+    width: 1280px;
+    padding-top: 98px;
+    @include center;
+  }
+  h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .cases {
+    .case {
+      float: left;
+      width: 320px;
+      height: 460px;
+      position: relative;
+    }
+    .case-1 {
+      background: url(../images/case-1_320x460.jpg) no-repeat center;
+    }
+    .case-2 {
+      background: url(../images/case-2_320x460.jpg) no-repeat center;
+    }
+    .case-3 {
+      background: url(../images/case-3_320x460.jpg) no-repeat center;
+    }
+    .case-4 {
+      background: url(../images/case-4_320x460.jpg) no-repeat center;
+    }
+    h4 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 15px;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+#team {
+  .container {
+    width: 1280px;
+    padding: 98px 0 54px;
+    @include center;
+  }
+  h2 {
+    font-size: 40px;
+    color: $blue;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .members {
+    height: 450px;
+    background-color: #f8f8f8;
+  }
+}
+#footer {
+  background-color: #161616;
+  color: #fff;
+  .container {
+    box-sizing: border-box;
+    width: 1280px;
+    padding: 56px 40px 36px;
+    @include center;
+  }
+  .lists {
+    padding-bottom: 30px;
+    .list {
+      float: left;
+      width: 212px;
+    }
+    .list-logo {
+      padding-right: 140px;
+    }
+    h5 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    a {
+      font-size: 12px;
+      color: #bababa;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .email-tt {
+      font-size: 12px;
+      color: #bababa;
+    }
+    .items {
+      line-height: 24px;
+    }
+  }
+  .address {
+    font-size: 14px;
+    line-height: 84px;
+    border-top: 1px solid #414141;
+    border-bottom: 1px solid #414141;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    padding-top: 30px;
+  }
+}

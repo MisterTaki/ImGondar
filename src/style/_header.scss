@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixin";
+#header {
+  height: 105px;
+  position: relative;
+  box-shadow: 0 2px 10px #443f3f;
+  .header-container {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 2px 10px #443f3f;
+  }
+  .header-container.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    .container {
+      padding: 10px 0;
+    }
+  }
+  .container {
+    width: 1280px;
+    padding: 30px 0 16px;
+    @include center;
+  }
+  .logo {
+    float: left;
+    a {
+      display: block;
+      width: 202px;
+      height: 59px;
+    }
+    img {
+      width: 202px;
+      height: 59px;
+    }
+  }
+  .nav {
+    float: left;
+    padding: 13px 0 0 100px;
+    position: relative;
+    li {
+      float: left;
+    }
+    .link {
+      display: block;
+      padding: 0 58px;
+      line-height: 46px;
+      text-align: center;
+      color: $black;
+      font-size: 16px;
+    }
+    .active a {
+      color: $blue;
+    }
+  }
+}
+#cur-bar {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: $blue;
+}
