@@ -2,6 +2,8 @@
 @import "mixin";
 @import "variables";
 #banner {
+  height: 678px;
+  overflow: hidden;
   &:hover .button{
     opacity: .5;
   }
