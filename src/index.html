@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <title>赏金IT部落</title>
   <link rel="stylesheet" href="lib/reset.css">
+  <link rel="stylesheet" href="lib/owl.carousel.css">
+  <link rel="stylesheet" href="lib/owl.theme.default.min.css">
+  <link rel="stylesheet" href="lib/animate.css">
   <link rel="stylesheet" href="style/style.min.css">
   <script src="lib/jquery-1.12.4.min.js" charset="utf-8"></script>
+  <script src="lib/owl.carousel.min.js" charset="utf-8"></script>
   <script src="scripts/main.min.js" charset="utf-8"></script>
 </head>
 
@@ -94,7 +98,15 @@
   </div>
   <!-- Banner轮播 -->
   <div id="banner">
-
+    <div class="banner-container">
+      <div class="item item-1"></div>
+      <div class="item item-2"></div>
+      <div class="item item-3"></div>
+    </div>
+    <div class="buttons-container">
+      <div class="button prev-button"></div>
+      <div class="button next-button"></div>
+    </div>
   </div>
   <!-- 服务 -->
   <div id="service">
@@ -134,16 +146,48 @@
       <h3>成功案例</h3>
       <ul class="cases clearfloat">
         <li class="case case-1">
-          <h4>赏金猎人 App</h4>
+          <a href="#">
+            <h4>赏金猎人 App</h4>
+            <div class="back">
+              <div class="content">
+                <h5>央美设计展</h5>
+                <p>中央美术学院2016毕业作品设计展</p>
+              </div>
+            </div>
+          </a>
         </li>
         <li class="case case-2">
-          <h4>中央美术学院设计展</h4>
+          <a href="#">
+            <h4>中央美术学院设计展</h4>
+            <div class="back">
+              <div class="content">
+                <h5>央美设计展</h5>
+                <p>中央美术学院2016毕业作品设计展</p>
+              </div>
+            </div>
+          </a>
         </li>
         <li class="case case-3">
-          <h4>星空云网站</h4>
+          <a href="#">
+            <h4>星空云网站</h4>
+            <div class="back">
+              <div class="content">
+                <h5>央美设计展</h5>
+                <p>中央美术学院2016毕业作品设计展</p>
+              </div>
+            </div>
+          </a>
         </li>
         <li class="case case-4">
-          <h4>爱动到家</h4>
+          <a href="#">
+            <h4>爱动到家</h4>
+            <div class="back">
+              <div class="content">
+                <h5>央美设计展</h5>
+                <p>中央美术学院2016毕业作品设计展</p>
+              </div>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -154,8 +198,189 @@
       <h2>LEADERS</h2>
       <i class="hr"></i>
       <h3>团队代表</h3>
-      <div class="members">
-
+      <div id="members">
+        <div class="item">
+          <div class="front">
+            <img src="images/member-1-avatar_226x226.jpg" alt="member-1-avatar" />
+            <div class="introduction">
+              <i class="up-arrow"></i>
+              <div class="tt">
+                <h4>汪小熊</h4>
+                <p>全栈工程师/产品经理</p>
+              </div>
+              <div class="content">
+                <h5>项目介绍</h5>
+                <p>赏金猎人Android & iOS</p>
+                <a href="http://imgondar.com" target="_blank" class="project-link">http://imgondar.com</a>
+              </div>
+              <a href="#" class="know-more">了解更多></a>
+            </div>
+          </div>
+          <div class="back back-1">
+            <div class="content">
+              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
+              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
+              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+            </div>
+            <i class="back-icon"></i>
+          </div>
+        </div>
+        <div class="item">
+          <div class="front">
+            <div class="introduction">
+              <i class="down-arrow"></i>
+              <div class="tt">
+                <h4>高琦</h4>
+                <p>前端开发工程师</p>
+              </div>
+              <div class="content">
+                <h5>项目介绍</h5>
+                <p>爱智康官网</p>
+                <a href="http://izhikang.com" target="_blank" class="project-link">http://izhikang.com</a>
+              </div>
+              <a href="#" class="know-more">了解更多></a>
+            </div>
+              <img src="images/member-2-avatar_226x226.png" alt="member-2-avatar" />
+          </div>
+          <div class="back back-2">
+            <div class="content">
+              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
+              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
+              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+            </div>
+            <i class="back-icon"></i>
+          </div>
+        </div>
+        <div class="item">
+          <div class="front">
+            <img src="images/member-3-avatar_226x226.jpg" alt="member-3-avatar" />
+            <div class="introduction">
+              <i class="up-arrow"></i>
+              <div class="tt">
+                <h4>黄焕龙</h4>
+                <p>前端开发工程师</p>
+              </div>
+              <div class="content">
+                <h5>项目介绍</h5>
+                <p>爱动微信平台</p>
+                <a href="http://aidongdaojia.com" target="_blank" class="project-link">http://aidongdaojia.com</a>
+              </div>
+              <a href="#" class="know-more">了解更多></a>
+            </div>
+          </div>
+          <div class="back back-3">
+            <div class="content">
+              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
+              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
+              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+            </div>
+            <i class="back-icon"></i>
+          </div>
+        </div>
+        <div class="item">
+          <div class="front">
+            <div class="introduction">
+              <i class="down-arrow"></i>
+              <div class="tt">
+                <h4>杨荣</h4>
+                <p>全栈工程师</p>
+              </div>
+              <div class="content">
+                <h5>项目介绍</h5>
+                <p>Emlog Material Design</p>
+                <p>响应式主题</p>
+              </div>
+              <a href="#" class="know-more">了解更多></a>
+            </div>
+              <img src="images/member-4-avatar_226x226.jpg" alt="member-4-avatar" />
+          </div>
+          <div class="back back-4">
+            <div class="content">
+              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
+              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
+              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+            </div>
+            <i class="back-icon"></i>
+          </div>
+        </div>
+        <div class="item">
+          <div class="front">
+            <img src="images/member-5-avatar_226x226.jpg" alt="member-5-avatar" />
+            <div class="introduction">
+              <i class="up-arrow"></i>
+              <div class="tt">
+                <h4>廖荣森</h4>
+                <p>前端开发工程师</p>
+              </div>
+              <div class="content">
+                <h5>项目介绍</h5>
+                <p>AutoLayout for Web</p>
+                <p>Development</p>
+              </div>
+              <a href="#" class="know-more">了解更多></a>
+            </div>
+          </div>
+          <div class="back back-5">
+            <div class="content">
+              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
+              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
+              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+            </div>
+            <i class="back-icon"></i>
+          </div>
+        </div>
+        <div class="item">
+          <div class="front">
+            <div class="introduction">
+              <i class="down-arrow"></i>
+              <div class="tt">
+                <h4>江顺秋</h4>
+                <p>UI 设计师</p>
+              </div>
+              <div class="content">
+                <h5>项目介绍</h5>
+                <p>江苏移动掌上营业厅</p>
+                <a href="http://jmonster.zcool.com.cn/" target="_blank" class="project-link">http://jmonster.zcool.com.cn/</a>
+              </div>
+              <a href="#" class="know-more">了解更多></a>
+            </div>
+            <img src="images/member-6-avatar_226x226.jpg" alt="member-6-avatar" />
+          </div>
+          <div class="back back-6">
+            <div class="content">
+              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
+              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
+              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+            </div>
+            <i class="back-icon"></i>
+          </div>
+        </div>
+        <div class="item">
+          <div class="front">
+            <img src="images/member-7-avatar_226x226.jpg" alt="member-7-avatar" />
+            <div class="introduction">
+              <i class="up-arrow"></i>
+              <div class="tt">
+                <h4>汪小熊</h4>
+                <p>全栈工程师/产品经理</p>
+              </div>
+              <div class="content">
+                <h5>项目介绍</h5>
+                <p>赏金猎人Android & iOS</p>
+                <a href="http://imgondar.com" target="_blank" class="project-link">http://imgondar.com</a>
+              </div>
+              <a href="#" class="know-more">了解更多></a>
+            </div>
+          </div>
+          <div class="back back-7">
+            <div class="content">
+              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
+              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
+              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+            </div>
+            <i class="back-icon"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
