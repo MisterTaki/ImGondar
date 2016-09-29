@@ -1,0 +1,70 @@
+@import "mixin";
+@import "variables";
+#service {
+  .container {
+    width: 1280px;
+    padding: 98px 0 50px;
+    @include center;
+  }
+  h2 {
+    font-size: 40px;
+    color: $blue;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .cards {
+    .card {
+      float: left;
+      width: 320px;
+      box-sizing: border-box;
+      padding: 0 15px;
+    }
+    .card-icon {
+      width: 270px;
+      height: 270px;
+      transition: all .5s ease;
+    }
+    .card-1 .card-icon {
+      background: url(../images/card-1_222x221.png) no-repeat center;
+    }
+    .card-2 .card-icon {
+      background: url(../images/card-2_222x221.png) no-repeat center;
+    }
+    .card-3 .card-icon {
+      background: url(../images/card-3_222x222.png) no-repeat center;
+    }
+    .card-4 .card-icon {
+      background: url(../images/card-4_222x222.png) no-repeat center;
+    }
+    .card-1:hover .card-icon {
+      background: url(../images/card-1-hover_269x269.png) no-repeat center;
+    }
+    .card-2:hover .card-icon {
+      background: url(../images/card-2-hover_269x269.png) no-repeat center;
+    }
+    .card-3:hover .card-icon {
+      background: url(../images/card-3-hover_269x269.png) no-repeat center;
+    }
+    .card-4:hover .card-icon {
+      background: url(../images/card-4-hover_269x269.png) no-repeat center;
+    }
+    h4 {
+      font-size: 22px;
+      color: $black;
+      text-align: center;
+      line-height: 76px;
+    }
+    p {
+      font-size: 14px;
+      color: #666666;
+      text-align: justify;
+      line-height: 22px;
+      padding: 0 10px;
+    }
+  }
+}

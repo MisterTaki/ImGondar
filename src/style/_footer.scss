@@ -1,1 +1,52 @@
+@import "mixin";
 @import "variables";
+#footer {
+  background-color: #161616;
+  color: #fff;
+  .container {
+    box-sizing: border-box;
+    width: 1280px;
+    padding: 56px 40px 36px;
+    @include center;
+  }
+  .lists {
+    padding-bottom: 30px;
+    .list {
+      float: left;
+      width: 212px;
+    }
+    .list-logo {
+      padding-right: 140px;
+    }
+    h5 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    a {
+      font-size: 12px;
+      color: #bababa;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .email-tt {
+      font-size: 12px;
+      color: #bababa;
+    }
+    .items {
+      line-height: 24px;
+    }
+  }
+  .address {
+    font-size: 14px;
+    line-height: 84px;
+    border-top: 1px solid #414141;
+    border-bottom: 1px solid #414141;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    padding-top: 30px;
+  }
+}

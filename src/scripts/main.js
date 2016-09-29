@@ -23,7 +23,9 @@ $(function(){
       dots: false,
       autoplay: true,
       autoplayHoverPause: true,
-      center: true
+      center: true,
+      nav: true,
+      navText: []
     });
 
     var $knowMores = $('.know-more');
@@ -105,10 +107,8 @@ $(function(){
       }
       if (scrollTop < serviceTop) {
         curIndex = 0;
-        console.log("0");
       } else if (scrollTop < caseTop) {
         curIndex = 1;
-        console.log("1");
       } else if (scrollTop < teamTop) {
         curIndex = 2;
       } else {

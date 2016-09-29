@@ -1,0 +1,52 @@
+@import "mixin";
+@import "mixin";
+@import "variables";
+#banner {
+  &:hover .button{
+    opacity: .5;
+  }
+  .banner-container {
+    min-width: 1280px;
+  }
+  .buttons-container {
+    position: relative;
+    width: 1280px;
+    height: 0;
+    @include center;
+  }
+  .button {
+    width: 80px;
+    height: 650px;
+    position: absolute;
+    top: -682px;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .5s ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .prev-button {
+    left: 0;
+    background: url(../images/prev_200x200.png) no-repeat center;
+    background-size: contain;
+  }
+  .next-button {
+    right: 0;
+    background: url(../images/next_200x200.png) no-repeat center;
+    background-size: contain;
+  }
+  .item {
+    height: 650px;
+  }
+  .item-1 {
+    background: url(../images/banner-1_2000x650.jpg) no-repeat center;
+  }
+  .item-2 {
+    background: url(../images/banner-2_2000x650.jpg) no-repeat center;
+  }
+  .item-3 {
+    background: url(../images/banner-3_2000x650.jpg) no-repeat center;
+  }
+}

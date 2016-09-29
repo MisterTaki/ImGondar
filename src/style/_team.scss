@@ -1,0 +1,181 @@
+#team {
+  .container {
+    width: 1280px;
+    padding: 98px 0 60px;
+    @include center;
+  }
+  h2 {
+    font-size: 40px;
+    color: $blue;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
+#members {
+  height: 450px;
+  background-color: #333333;
+  .item {
+    width: 226px;
+    position: relative;
+    overflow: hidden;
+    background-color: #333333;
+    .front-hover {
+        transform: rotateY(0deg) scale(0, 0)!important;
+        opacity: 0;
+        z-index: 10!important;
+      }
+    .back-hover {
+        transform: rotateY(360deg) scale(1, 1)!important;
+        opacity: 1!important;
+        z-index: 20!important;
+      }
+    .front {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      z-index: 20;
+      height: 450px;
+      box-sizing: border-box;
+      overflow: hidden;
+      text-align: center;
+      background-color: #333333;
+      transition: all .5s ease-in;
+      transform: rotateY(360deg) scale(1, 1);
+      .introduction {
+        position: relative;
+        height: 224px;
+      }
+      .up-arrow {
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -10px;
+        left: 103px;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid #333333;
+        z-index: 99;
+      }
+      .down-arrow {
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: -10px;
+        left: 103px;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-top: 10px solid #333333;
+        z-index: 99;
+      }
+      img {
+        width: 226px;
+        height: 226px;
+      }
+      .tt {
+        padding: 20px 0 10px;
+        margin: 0 24px;
+        border-bottom: 1px solid #a8a6a5;
+      }
+      h4 {
+        font-size: 24px;
+        color: #fff;
+        line-height: 36px;
+      }
+      h5 {
+        font-size: 14px;
+        color: #fff;
+        line-height: 20px;
+      }
+      p {
+        font-size: 14px;
+        color: #a8a6a5;
+        line-height: 20px;
+      }
+      a {
+        color: #a8a6a5;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      a.project-link:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+      a.know-more {
+        display: block;
+        width: 114px;
+        height: 30px;
+        line-height: 30px;
+        @include center;
+        border-radius: 15px;
+        border: 1px solid #a8a6a5;
+        &:hover {
+          color: #fff;
+          border-color: #fff;
+        }
+      }
+      .content {
+        padding: 10px 0 15px;
+      }
+    }
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 10;
+      height: 450px;
+      box-sizing: border-box;
+      overflow: hidden;
+      padding: 50px 32px 0;
+      position: relative;
+      transition: all .5s ease-in;
+      transform: rotateY(0deg) scale(0, 0);
+      .content p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+        text-align: justify;
+        text-indent: 28px;
+      }
+      .back-icon {
+        display: block;
+        width: 21px;
+        height: 17px;
+        background: url(../images/back_21x17.png) no-repeat center;
+        cursor: pointer;
+        position: absolute;
+        bottom: 22px;
+        left: 94px;
+      }
+    }
+    .back-1 {
+      background: url(../images/member-1-bg_226x450.png) no-repeat center;
+    }
+    .back-2 {
+      background: url(../images/member-2-bg_226x450.jpg) no-repeat center;
+    }
+    .back-3 {
+      background: url(../images/member-3-bg_226x450.png) no-repeat center;
+    }
+    .back-4 {
+      background: url(../images/member-4-bg_226x450.png) no-repeat center;
+    }
+    .back-5 {
+      background: url(../images/member-5-bg_226x450.png) no-repeat center;
+    }
+    .back-6 {
+      background: url(../images/member-6-bg_226x450.png) no-repeat center;
+    }
+    .back-7 {
+      background: url(../images/member-7-bg_226x450.png) no-repeat center;
+    }
+  }
+}
