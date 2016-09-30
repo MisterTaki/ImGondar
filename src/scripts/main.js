@@ -1,5 +1,11 @@
 $(function(){
   (function(){
+    // 隐藏载入动画
+    $(window).load(function() {
+      $('#loading').fadeOut(800);
+    });
+    
+    // 轮播图
     var bannerSlider = $("#banner .banner-container").owlCarousel({
       loop:true,
       items: 1,
@@ -11,11 +17,11 @@ $(function(){
       touchDrag: false
     });
     $('#banner .prev-button').on('click',function(){
-      bannerSlider.trigger('prev.owl.carousel')
-    })
+      bannerSlider.trigger('prev.owl.carousel');
+    });
     $('#banner .next-button').on('click',function(){
-      bannerSlider.trigger('next.owl.carousel')
-    })
+      bannerSlider.trigger('next.owl.carousel');
+    });
     $("#members").owlCarousel({
       loop:true,
       items: 5,
@@ -28,6 +34,7 @@ $(function(){
       navText: []
     });
 
+    // 团队成员了解更多
     var $knowMores = $('.know-more');
     var $knowBacks = $('.back-icon');
     $knowMores.click(function(){
@@ -35,21 +42,22 @@ $(function(){
       $front.addClass('front-hover');
       $front.siblings('.back').addClass('back-hover');
       return false;
-    })
+    });
     $knowBacks.click(function(){
       var $back = $(this).parents('.back');
       $back.removeClass('back-hover');
       $back.siblings('.front').removeClass('front-hover');
       return false;
-    })
+    });
 
+    // 导航栏下划线控制
     var serviceTop = $('#service').offset().top - 150,
         caseTop = $('#case').offset().top - 150,
         teamTop = $('#team').offset().top - 150,
         $anchors = $('#header .link'),
         $anchorParents = $('#header .nav li'),
         $curBar = $('#cur-bar'),
-        $headerContainer = $('#header .header-container')
+        $headerContainer = $('#header .header-container'),
         curIndex = -1,
         curFlag = 0;
 

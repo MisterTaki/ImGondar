@@ -6,13 +6,11 @@
   <title>赏金IT部落</title>
   <meta name="viewport" content="width=1280">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="lib/reset.css">
-  <link rel="stylesheet" href="lib/owl.carousel.css">
-  <link rel="stylesheet" href="lib/owl.theme.default.min.css">
-  <link rel="stylesheet" href="lib/animate.css">
   <link rel="stylesheet" href="style/style.min.css">
-  <script src="lib/mobile-util.js" charset="utf-8"></script>
+  <script src="lib/mobile-util.min.js" charset="utf-8"></script>
+</head>
 <body>
+  <!-- IE9以下提示栏 -->
   <!--[if lt IE 9]>
     <style>
       #top-tip {
@@ -27,7 +25,6 @@
         top: 0;
         z-index: 999;
       }
-
       #top-tip .tip-close {
         position: absolute;
         display: block;
@@ -38,7 +35,6 @@
         background: url(images/ie-close.png) no-repeat;
         cursor: pointer;
       }
-
       #top-tip a {
         color: #ee7700;
       }
@@ -47,6 +43,11 @@
         text-decoration: underline;
       }
     </style>
+
+    <div id="top-tip">
+      <span class="tip-close" title="关闭"></span>
+      <p>已经有超过90%的用户使用更高版本 <a target="_blank" title="下载Chrome" href="http://www.google.cn/intl/zh-CN/chrome/">Google Chrome</a> 或 <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="下载最新版IE浏览器">Internet Explorer</a> 获得了更精彩的体验，您还不试试？</p>
+    </div>
 
     <script type="text/javascript">
       $(function() {
@@ -57,13 +58,13 @@
         })();
       });
     </script>
-
-    <div id="top-tip">
-      <span class="tip-close" title="关闭"></span>
-      <p>已经有超过90%的用户使用更高版本 <a target="_blank" title="下载Chrome" href="http://www.google.cn/intl/zh-CN/chrome/">Google Chrome</a> 或 <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="下载最新版IE浏览器">Internet Explorer</a> 获得了更精彩的体验，您还不试试？</p>
-    </div>
   <![endif]-->
-  <!-- 顶部固定 -->
+
+  <!-- 加载进度条 -->
+  <div id="loading">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
   <!-- 头部 -->
   <div id="header">
     <div class="header-container">
@@ -148,8 +149,8 @@
             <h4>赏金猎人 App</h4>
             <div class="back">
               <div class="content">
-                <h5>央美设计展</h5>
-                <p>中央美术学院2016毕业作品设计展</p>
+                <h5>赏金猎人 App</h5>
+                <p></p>
               </div>
             </div>
           </a>
@@ -170,8 +171,8 @@
             <h4>星空云网站</h4>
             <div class="back">
               <div class="content">
-                <h5>央美设计展</h5>
-                <p>中央美术学院2016毕业作品设计展</p>
+                <h5>星空云网站</h5>
+                <p></p>
               </div>
             </div>
           </a>
@@ -181,8 +182,8 @@
             <h4>爱动到家</h4>
             <div class="back">
               <div class="content">
-                <h5>央美设计展</h5>
-                <p>中央美术学院2016毕业作品设计展</p>
+                <h5>爱动到家</h5>
+                <p></p>
               </div>
             </div>
           </a>
@@ -266,9 +267,7 @@
           </div>
           <div class="back back-3">
             <div class="content">
-              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
-              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
-              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+              <p>前端开发，北科大大四学生，2016年3月开始前端开发学习，擅长html5，css和jquery和bootstrap前端框架。</p>
             </div>
             <i class="back-icon"></i>
           </div>
@@ -283,18 +282,17 @@
               </div>
               <div class="content">
                 <h5>项目介绍</h5>
-                <p>Emlog Material Design</p>
-                <p>响应式主题</p>
+                <a href="http://oblog.helloarron.com/" target="_blank" class="project-link">Emlog Material Design<br/>响应式主题</a>
               </div>
               <a href="#" class="know-more">了解更多></a>
             </div>
-              <img src="images/member-4-avatar_226x226.jpg" alt="member-4-avatar" />
+              <img src="images/member-4-avatar_226x226.png" alt="member-4-avatar" />
           </div>
           <div class="back back-4">
             <div class="content">
-              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
-              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
-              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+              <p>90后全栈工程师，北科大研究生，2012年进入大学后一直学习计算机相关技术，曾获北科“87级校友基金创新个人”。</p>
+              <p>擅长互联网Web网站开发，服务器运维，了解并正在学习Android和iOS平台App开发。</p>
+              <p>2014年7月加入赏金猎人创业团队，2015年加入了乐其橙创业公司，现正自学各项技术。</p>
             </div>
             <i class="back-icon"></i>
           </div>
@@ -310,17 +308,14 @@
               </div>
               <div class="content">
                 <h5>项目介绍</h5>
-                <p>AutoLayout for Web</p>
-                <p>Development</p>
+                <a href="https://github.com/LahK/AutoLayout-for-Web-Development" target="_blank" class="project-link">AutoLayout for Web Development</a>
               </div>
               <a href="#" class="know-more">了解更多></a>
             </div>
           </div>
           <div class="back back-5">
             <div class="content">
-              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
-              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
-              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+              <p>90后前端工程师，北科大研究生，专业为通信工程，目前在校研究方向为大数据及数据挖掘。对各种编程语言均有涉猎，在W eb方面擅长前端，与Python后端。2016年7月实习于北京大星科技有限公司，主要工作为微信端W bApp的开发。</p>
             </div>
             <i class="back-icon"></i>
           </div>
@@ -344,9 +339,9 @@
           </div>
           <div class="back back-6">
             <div class="content">
-              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
-              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
-              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+              <p>从事UI 设计3年，负责江苏移动掌上营业厅标准版，校园版项目的设计制作，赏金猎人app设计；</p>
+              <p>曾参与中国电信微店项目UI 设计，云南移动项目网掌营业厅设计等，具有良好的专业知识水平；</p>
+              <p>兼具丰富的工作经验，良好的团队合作精神。</p>
             </div>
             <i class="back-icon"></i>
           </div>
@@ -370,9 +365,7 @@
           </div>
           <div class="back back-7">
             <div class="content">
-              <p>北科大大四学生，计算机科学与技术专业，主要负责前端开发工作，目标是全栈工程师。</p>
-              <p>熟练使用各种基本Web 前端技术并有相关的项目开发经验；</p>
-              <p>喜欢关注新事物、新技术，有较强的学习能力，乐于挑战。</p>
+              <p>90后程序员，北科大本科生，15年进入北科学习通信工程，熟悉JavaWeb研发，Android客户端开发。</p>
             </div>
             <i class="back-icon"></i>
           </div>
@@ -391,16 +384,16 @@
           <h5>业务</h5>
           <ul class="items">
             <li class="item">
-              <a href="#" target="_blank">UI/UE设计</a>
+              <a target="_blank">UI/UE设计</a>
             </li>
             <li class="item">
-              <a href="#" target="_blank">WEB开发</a>
+              <a target="_blank">WEB开发</a>
             </li>
             <li class="item">
-              <a href="#" target="_blank">APP开发</a>
+              <a target="_blank">APP开发</a>
             </li>
             <li class="item">
-              <a href="#" target="_blank">微信开发</a>
+              <a target="_blank">微信开发</a>
             </li>
           </ul>
         </li>
@@ -408,7 +401,7 @@
           <h5>关于我们</h5>
           <ul class="items">
             <li class="item">
-              <a href="#" target="_blank">关于赏金IT部落</a>
+              <a target="_blank">关于赏金IT部落</a>
             </li>
           </ul>
         </li>
@@ -417,10 +410,10 @@
           <ul class="items">
             <li class="item">
               <p class="email-tt">邮箱：</p>
-              <a href="#" target="_blank">littlebearwmx@qq.com</a>
+              <a href="mailto:littlebearwmx@qq.com" target="_blank">littlebearwmx@qq.com</a>
             </li>
             <li class="item">
-              <a href="#" target="_blank">新浪微博</a>
+              <a target="_blank">新浪微博</a>
             </li>
           </ul>
         </li>
@@ -436,12 +429,11 @@
       </div>
     </div>
   </div>
-  <!-- script start -->
+  <!-- scripts start -->
   <script src="lib/jquery-1.12.4.min.js" charset="utf-8"></script>
   <script src="lib/owl.carousel.min.js" charset="utf-8"></script>
   <script src="scripts/main.min.js" charset="utf-8"></script>
-  <!-- script end -->
-</head>
+  <!-- scripts end -->
 </body>
 
 </html>
